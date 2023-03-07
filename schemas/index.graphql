@@ -5,7 +5,7 @@ type User {
 
 input UserInput {
     name: String
-    oldName: String @deprecated(reason: "All requests should be internal")
+    oldName: String @deprecated(reason: "Some reason for deprecation")
 }
 
 type Query {
