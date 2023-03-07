@@ -1,0 +1,13 @@
+type User {
+    id: ID!
+    name: String
+}
+
+input UserInput {
+    name: String
+    oldName: String @deprecated(reason: "All requests should be internal")
+}
+
+type Query {
+    list(params: UserInput): [User!]
+}
